@@ -1,0 +1,98 @@
+body {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  font-family: Arial;
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+}
+
+.sudoku {
+  margin: 2rem 0;
+}
+
+.sudoku-container {
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+.sudoku-container input {
+  color: #000000;
+  font-size: 36px;
+  height: 60px;
+  padding: 0;
+  text-align: center;
+  width: 60px;
+}
+
+input:focus {
+  box-shadow: 0 0 0 2px rgba(21, 156, 228, 0.7);
+  outline: none;
+}
+
+.sudoku-container input:disabled {
+  background-color: #EBECF0;
+  font-weight: 600;
+}
+
+.sudoku-controls {
+  display: flex;
+  margin: 20px 0;
+}
+
+.button {
+  background-color: #1849AB;
+  border-color: #1849AB;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1rem;
+  padding: .5rem 1rem;
+  text-align: center;
+  vertical-align: middle;
+  width: 110px;
+}
+
+.button:focus {
+  box-shadow: 0 0 0 4px rgba(21, 156, 228, 0.7);
+  outline: none;
+}
+
+.sudoku-container .invalid,
+.sudoku-container input:disabled.invalid {
+  background-color: #CF5959;
+}
+
+.winner {
+  color: #1849AB;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.sudoku-heading {
+  font-size: 40px;
+  text-align: center;
+}
+
+tr:nth-child(1) td {
+  border-top: 4px solid #000000;;
+}
+
+td:first-child {
+  border-left: 4px solid #000000;
+}
+
+td:nth-child(3n) {
+  border-right: 4px solid #000000;
+}
+
+tr:nth-child(3n) td {
+  border-bottom: 4px solid #000000;
+}
